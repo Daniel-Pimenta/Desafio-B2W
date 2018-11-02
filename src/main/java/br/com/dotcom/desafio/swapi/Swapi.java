@@ -27,7 +27,7 @@ public class Swapi {
 
 		ResponseEntity<Planeta> re = restTemplate.exchange(uri, HttpMethod.GET, entity, Planeta.class);
 		Planeta planeta = re.getBody();
-
+    // teste
 		if (!planeta.getResults().isEmpty()) {
 			List<Result> r = planeta.getResults();
 			this.qtdFilmes = r.get(0).getFilms().size();
