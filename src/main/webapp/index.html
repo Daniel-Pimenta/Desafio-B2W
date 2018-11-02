@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Desafio B2W</title>
+<style type="text/css">
+body {
+  font-family:Arial;
+}
+</style>
+</head>
+<body>
+<h1># b2w-rest-api</h1>
+
+<b>A long time ago in a galaxy far far away</b><p>
+
+Desafio B2W<p>
+
+Esse pequeno sistema disponibiliza serviços rest<p>
+
+./api/planeta/list            -> Lista todos os planetas no banco de dados<br> 
+./api/planeta/get/id/{id}     -> Lista todos o planeta no banco de dados para o ID informado<br>
+./api/planeta/get/nome/{nome} -> Lista todos o planeta no banco de dados para o nome informado<br>
+./api/planeta/edit/{id}       -> Alatera o planeta no banco de dados para o ID informado<br>
+./api/rest/planeta/add             -> Adiciona um planeta no banco de dados<br>
+./api/planeta/delete/{id}     -> Deleta o planeta no banco de dados para o ID informado<br>
+<br>
+O banco de dados é o MongoDB (cloud)<br>
+<br>
+mongodb+srv://b2w:b2w@cluster0-is1wv.mongodb.net<br>
+<br>
+database => b2w<br>
+collection => planetas<br>
+O documento segue o formato<br>
+<pre>
+{
+    "id": 1,
+    "nome": "Hoth",
+    "clima": "MUUUUITO FRIO",
+    "terreno": "DURO",
+    "qtdAparicao": "1"
+}
+</pre>
+<p>Para a Inserção de Dados foi utilizado o Aplicativo <a href="https://www.getpostman.com/">Postman</a>
+<p>
+Que a força esteja com você 
+</body>
+</html>
